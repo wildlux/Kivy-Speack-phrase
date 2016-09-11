@@ -1,0 +1,22 @@
+#:kivy 1.9
+#:import os.System os
+#:set testo ""
+
+BoxLayout:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 10
+    color: (1,0,1,1)
+    Label:
+        text: "Speack Speack !! "
+        size_hint: 1, None
+    TextInput:
+        text: "This is an Example of phrase"
+        id: testo
+        size_hint: 1, 0.5
+
+    Button:
+        text: "Button for Speacking"
+        on_press: app.Speacking("Hello")
+
+##os.system("say " + "Hello World" ))
